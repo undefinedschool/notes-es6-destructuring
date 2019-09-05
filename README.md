@@ -1,4 +1,4 @@
-# ES6: Array & Object destructuring
+# ✨ ES6: Array & Object destructuring
 
 - Es una forma concisa de _extraer valores_ de _arrays_ y otros _objetos_ y guardarlos en variables
 
