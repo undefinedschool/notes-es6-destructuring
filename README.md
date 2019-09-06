@@ -30,7 +30,7 @@ console.log(fullName, age, job); // 'Sam Fisher' 62 'spy';
 
 ## Extraer valores de objetos pasados como parámetros de una función
 
-```
+```js
 // ES5
 function myFunc(opts) {
   var name = opts.name;
@@ -40,14 +40,14 @@ function myFunc(opts) {
 myFunc({ name: 'John', age: 25 });
 ```
 
-```
+```js
 // ES6
 function myFunc({ name, age }) {}
 ```
 
 ## Renombrar valores extraídos (aka _alias_, _custom names_)
 
-```
+```js
 function myFunc({ someLongPropertyName: prop }) {
   console.log(prop);
 }
