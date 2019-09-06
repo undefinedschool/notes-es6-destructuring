@@ -30,6 +30,8 @@ console.log(fullName, age, job); // 'Sam Fisher' 62 'spy';
 
 ## Extraer valores de objetos pasados como parámetros de una función
 
+Los nombres que usemos para los parámetros deben coincidir con nombres de propiedades del objeto que se recibe, sino van a tener `undefined` como valor
+
 ```js
 // ES5
 function myFunc(opts) {
