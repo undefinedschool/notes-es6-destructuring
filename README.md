@@ -101,7 +101,7 @@ console.log(b);
 
 También podemos quedarnos con el primer valor de un _array_ usando _destructuring_ y guardar el resto en otro _array_
 
-:warning: para que esto funcione, el operador de los 3 `...` (similar a cuando usamos _spread_, pero en este caso lo llamamos _rest parameters_) sólo puede asignarse al último elemento al que aplicamos _destructuring_ (porque es el *rest*o, lo *rest*ante, *rest*... se entiende?)
+:warning: para que esto funcione, el operador de los 3 `...` (similar a cuando usamos _spread_, pero en este caso lo llamamos _rest parameters_) sólo puede asignarse al último elemento al que aplicamos _destructuring_ (porque es el *rest*o, lo *rest*ante, *rest*... se entiende? [Acá](https://javascript.info/rest-parameters-spread-operator#rest-parameters) podés leer más sobre _rest parameters_)
 
 ```js
 const numbers = [ 10, 20, 30, 40, 50 ];
