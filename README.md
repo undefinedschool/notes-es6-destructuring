@@ -84,6 +84,14 @@ const [,, three] = array;
 console.log(three);
 ```
 
+### Retornar y extraer múltiples valores
+
+```js
+const sumAndMultiply = (a, b) => [a + b, a * b];
+
+const [sum, product] = sumAndMultiply(2, 3);
+```
+
 ### Swapping
 
 ```js
