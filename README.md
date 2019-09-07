@@ -115,3 +115,16 @@ También podemos quedarnos con el primer valor de un _array_ usando _destructuri
 const numbers = [ 10, 20, 30, 40, 50 ];
 const [ head, ...tail ] = numbers;
 ```
+
+#### Y con objetos
+
+```js
+const eBook = { 
+  title: 'The Lord of the Rings - The Fellowship of the Ring', 
+  genre: 'Fantasy', 
+  author: 'J. R. R. Tolkien', 
+  cover: 'https://i.imgur.com/OwMUnQu.jpg'
+}
+
+const {title, ...info} = eBook;
+```
