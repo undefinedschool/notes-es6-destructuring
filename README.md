@@ -1,6 +1,12 @@
 # ✨ ES6: Array & Object destructuring
 
-- Es una forma concisa de _extraer valores_ de _arrays_ y otros _objetos_ y guardarlos en variables
+> El siguiente contenido fue elaborado por [@_nhsz](https://twitter.com/_nhsz) como guía para las clases de [undefined school](https://twitter.com/undefinedSchool)
+
+> Son bienvenidos los _issues_ y _PRs_ para mejorar el contenido, corregir errores, etc
+
+> Si el contenido te resultó útil y querés colaborar, podés hacerlo [acá](https://trello.com/c/TFbCZtPN/34-donaciones) (se acepta BTC :P). Gracias!
+
+- Es una forma concisa de _**extraer valores**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables
 
 ## Object destructuring
 
