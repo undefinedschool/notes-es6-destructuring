@@ -50,10 +50,14 @@ myFunc({ name: 'John', age: 25 });
 
 ```js
 // ES6
-function myFunc({ name, age }) {}
+function myFunc({ name, age }) {
+  // your code ✨
+}
 ```
 
-## Renombrar valores extraídos (aka _alias_, _custom names_)
+## Renombrar valores extraídos (aka _alias_/_custom names_)
+
+### En parámetros recibidos en funciones
 
 ```js
 function myFunc({ someLongPropertyName: prop }) {
@@ -62,6 +66,23 @@ function myFunc({ someLongPropertyName: prop }) {
 
 myFunc({ someLongPropertyName: 'Hello' })
 // logs 'Hello'
+```
+
+### Extrayendo valores a constantes/variables
+
+```js
+const user = {
+  fullName: 'Sam Fisher',
+  age: 62,
+  job: 'spy'
+}
+
+const { fullName } = user;
+fullName;     // =>'Sam Fisher'
+
+// assign `completeName` alias to `fullName` bind
+const { fullName: completeName } = user;
+completeName; // => 'Sam Fisher'
 ```
 
 ## Default values
