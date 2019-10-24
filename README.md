@@ -96,6 +96,7 @@ console.log(name); // Sam
 
 ```js
 const array = [1, 2, 3, 4, 5];
+// `one` will take the array[0] value and `two` the array[1] value
 const [one, two] = array;
 
 console.log(one, two);
