@@ -2,8 +2,6 @@
 
 > Son bienvenidos los _issues_ y _PRs_ para mejorar el contenido, corregir errores, etc
 
-> Si el contenido te resultó útil y querés colaborar, podés hacerlo [acá](https://trello.com/c/TFbCZtPN/34-donaciones) (se acepta BTC :P). Gracias!
-
 # ✨ ES6: Array & Object destructuring
 
 - Es una forma concisa de _**extraer valores**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables
