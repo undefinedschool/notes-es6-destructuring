@@ -49,6 +49,8 @@ const { fullName, age, job } = user;
 console.log(fullName, age, job); // 'Sam Fisher' 62 'spy';
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ## Extraer valores de objetos pasados como parámetros de una función
 
 Los nombres que usemos para los parámetros deben coincidir con nombres de propiedades del objeto que se recibe, sino van a tener `undefined` como valor
@@ -70,6 +72,8 @@ function myFunc({ name, age }) {
 }
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ## Renombrar valores extraídos (aka _alias_/_custom names_)
 
 ### En parámetros recibidos en funciones
@@ -82,6 +86,8 @@ function myFunc({ someLongPropertyName: prop }) {
 myFunc({ someLongPropertyName: 'Hello' })
 // logs 'Hello'
 ```
+
+[↑ Ir al inicio](#-es6-array--object-destructuring)
 
 ### Extrayendo valores a constantes/variables
 
@@ -100,6 +106,8 @@ const { fullName: completeName } = user;
 completeName; // => 'Sam Fisher'
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ## Default values
 
 El _destructuring_ nos permite asignar _valores por default_ a una variable, en el caso de que no reciba ningún valor ó este sea `undefined`.
@@ -116,6 +124,8 @@ const array = [1];
 
 const [one, two = 2] = array;
 ```
+
+[↑ Ir al inicio](#-es6-array--object-destructuring)
 
 ## Arrays
 
@@ -148,6 +158,8 @@ const [,, three] = array;
 console.log(three);
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ### Retornar y extraer múltiples valores
 
 ```js
@@ -155,6 +167,8 @@ const sumAndMultiply = (a, b) => [a + b, a * b];
 
 const [sum, product] = sumAndMultiply(2, 3);
 ```
+
+[↑ Ir al inicio](#-es6-array--object-destructuring)
 
 ### Swapping de variables
 
@@ -169,6 +183,8 @@ console.log(a);
 console.log(b);
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ## Destructuring + Rest parameters magic ✨
 
 También podemos quedarnos con el primer valor de un _array_ usando _destructuring_ y guardar el resto en otro _array_. El `rest operator` (`...`) nos permite referenciar a estos elementos restantes.
@@ -180,6 +196,8 @@ const numbers = [ 10, 20, 30, 40, 50 ];
 // array destructuring + rest operator
 const [ head, ...tail ] = numbers;
 ```
+
+[↑ Ir al inicio](#-es6-array--object-destructuring)
 
 ### ...y con objetos
 
@@ -206,6 +224,8 @@ const info = {
 }
 ```
 
+[↑ Ir al inicio](#-es6-array--object-destructuring)
+
 ## Compatibilidad con los diferentes browsers
 
 La sintaxis de _destructuring_ funciona en todos los navegadores modernos (incluyendo mobile), pero **no tiene soporte en IE**.
@@ -215,3 +235,5 @@ El `rest operator` **no funciona en Edge ni Safari** (aunque Edge tendrá soport
 **No podemos usar [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)** con _destructuring_.
 
 👉 Como siempre, se recomienda visitar [Can I use...](https://caniuse.com/#search=destructuring) para estar al tanto de las novedades en cuanto al soporte de una determinada feature.
+
+[↑ Ir al inicio](#-es6-array--object-destructuring)
