@@ -4,9 +4,11 @@
 
 # ✨ ES6: Array & Object destructuring
 
-- Es una forma concisa de _**extraer valores**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables
+👉 Es una forma concisa de _**extraer valores individuales**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables.
 
 ## Object destructuring
+
+Usando _destructuring_, vamos a crear variables con los mismos nombres que las propiedades del objeto y guardar en estas sus valores.
 
 :warning: el **orden** de los elementos **no importa**, sólo que _matcheen_ los nombres de las propiedades
 
@@ -95,6 +97,17 @@ console.log(name); // Sam
 :warning: el **orden** de los elementos **importa**
 
 ```js
+// without destructuring 😱
+const array = [1, 2, 3, 4, 5];
+
+const one = array[0];
+const two = array[1];
+```
+
+En vez de definir variables, lo que hacemos con _destructuring_ es crear un _array de variables_. El índice de estas variables se corresponde con el índice de los elementos en el array que estamos mapeando.
+
+```js
+// with destructuring 😎
 const array = [1, 2, 3, 4, 5];
 // `one` will take the array[0] value and `two` the array[1] value
 const [one, two] = array;
@@ -118,7 +131,7 @@ const sumAndMultiply = (a, b) => [a + b, a * b];
 const [sum, product] = sumAndMultiply(2, 3);
 ```
 
-### Swapping
+### Swapping de variables
 
 ```js
 // element swapping without aux ✨
@@ -133,16 +146,19 @@ console.log(b);
 
 ### Destructuring + Rest parameters magic ✨
 
-También podemos quedarnos con el primer valor de un _array_ usando _destructuring_ y guardar el resto en otro _array_
+También podemos quedarnos con el primer valor de un _array_ usando _destructuring_ y guardar el resto en otro _array_. El `rest operator` (`...`) nos permite referenciar a estos elementos restantes.
 
 :warning: para que esto funcione, el operador de los 3 `...` (similar a cuando usamos _spread_, pero en este caso lo llamamos _rest parameters_) sólo puede asignarse al último elemento al que aplicamos _destructuring_ (porque es el *rest*o, lo *rest*ante, *rest*... se entiende? [Acá](https://javascript.info/rest-parameters-spread-operator#rest-parameters) podés leer más sobre _rest parameters_)
 
 ```js
 const numbers = [ 10, 20, 30, 40, 50 ];
+// array destructuring + rest operator
 const [ head, ...tail ] = numbers;
 ```
 
 #### Y con objetos
+
+Podemos usar el `rest operator` para crear un objeto con las _propiedades restantes_.
 
 ```js
 const eBook = { 
@@ -154,3 +170,21 @@ const eBook = {
 
 const {title, ...info} = eBook;
 ```
+
+En el ejemplo anterior, el objeto `info` sería equivalente a
+
+```js
+const info = {
+  genre: 'Fantasy', 
+  author: 'J. R. R. Tolkien', 
+  cover: 'https://i.imgur.com/OwMUnQu.jpg'
+}
+```
+
+## Compatibilidad en los diferentes browsers
+
+La sintaxis de _destructuring_ funciona en todos los navegadores modernos (incluyendo mobile), pero **no tiene soporte en IE**.
+
+El `rest operator` **no funciona en Edge ni Safari** (aunque Edge tendrá soporte cuando salga la beta con Chromium).
+
+**No podemos usar [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)** con _destructuring_
