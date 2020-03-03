@@ -5,10 +5,11 @@
 
 # ![ES6: Array & Object destructuring](https://i.imgur.com/jmOquTu.png)
 
-## Notas sobre ES6+
+## Contenido relacionado
 
-- [**Destructuring**](https://github.com/undefinedschool/notes-es6-destructuring-notes)
-- [**Async/Await**](https://github.com/undefinedschool/notes-es2017-async-await)
+### `ES6+`
+
+- [**ES2017: Async/Await**](https://github.com/undefinedschool/notes-es2017-async-await)
 
 ## Contenido
 
