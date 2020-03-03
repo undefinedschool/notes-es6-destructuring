@@ -12,22 +12,27 @@
 
 ## Contenido
 
-- [Object destructuring](#object-destructuring)
-  - [Extraer valores de objetos pasados como parámetros de una función](#extraer-valores-de-objetos-pasados-como-parámetros-de-una-función)
-  - [Renombrar valores extraídos (aka alias/custom names)](#renombrar-valores-extraídos-aka-aliascustom-names)
-    - [En parámetros recibidos en funciones](#en-parámetros-recibidos-en-funciones)
-    - [Extrayendo valores a constantes/variables](#extrayendo-valores-a-constantesvariables)
-- [Default values](#default-values)
-- [Arrays](#arrays)
-  - [Retornar y extraer múltiples valores](#retornar-y-extraer-múltiples-valores)
-  - [Swapping de variables](#swapping-de-variables)
-- [Destructuring + Rest parameters magic ✨](#destructuring--rest-parameters-magic-)
-  - [...y con objetos](#y-con-objetos)
-- [Compatibilidad con los diferentes browsers](#compatibilidad-con-los-diferentes-browsers)
+- [Intro](https://github.com/undefinedschool/notes-es6-destructuring-notes#intro)
+- [Object destructuring](https://github.com/undefinedschool/notes-es6-destructuring-notes#object-destructuring)
+  - [Extraer valores de objetos pasados como parámetros de una función](https://github.com/undefinedschool/notes-es6-destructuring-notes#extraer-valores-de-objetos-pasados-como-par%C3%A1metros-de-una-funci%C3%B3n)
+  - [Renombrar valores extraídos (aka alias/custom names)](https://github.com/undefinedschool/notes-es6-destructuring-notes#renombrar-valores-extra%C3%ADdos-aka-aliascustom-names)
+    - [En parámetros recibidos en funciones](https://github.com/undefinedschool/notes-es6-destructuring-notes#en-par%C3%A1metros-recibidos-en-funciones)
+    - [Extrayendo valores a constantes/variables](https://github.com/undefinedschool/notes-es6-destructuring-notes#extrayendo-valores-a-constantesvariables)
+- [Default values](https://github.com/undefinedschool/notes-es6-destructuring-notes#default-values)
+- [Arrays](https://github.com/undefinedschool/notes-es6-destructuring-notes#arrays)
+  - [Retornar y extraer múltiples valores](https://github.com/undefinedschool/notes-es6-destructuring-notes#retornar-y-extraer-m%C3%BAltiples-valores)
+  - [Swapping de variables](https://github.com/undefinedschool/notes-es6-destructuring-notes#swapping-de-variables)
+- [Destructuring + Rest parameters magic ✨](https://github.com/undefinedschool/notes-es6-destructuring-notes#destructuring--rest-parameters-magic-)
+  - [...y con objetos](https://github.com/undefinedschool/notes-es6-destructuring-notes#y-con-objetos)
+- [Compatibilidad con los diferentes browsers](https://github.com/undefinedschool/notes-es6-destructuring-notes#compatibilidad-con-los-diferentes-browsers)
 
 ---
 
-👉 Es una forma concisa de _**extraer valores individuales**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables.
+## Intro
+
+Es una forma concisa de _**extraer valores individuales**_ (_"desestructurar"_) de _arrays_ y otros _objetos_ y guardarlos en variables.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Object destructuring
 
@@ -57,7 +62,7 @@ const { fullName, age, job } = user;
 console.log(fullName, age, job); // 'Sam Fisher' 62 'spy';
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Extraer valores de objetos pasados como parámetros de una función
 
@@ -80,7 +85,7 @@ function myFunc({ name, age }) {
 }
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Renombrar valores extraídos (aka _alias_/_custom names_)
 
@@ -95,7 +100,7 @@ myFunc({ someLongPropertyName: 'Hello' })
 // logs 'Hello'
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ### Extrayendo valores a constantes/variables
 
@@ -114,7 +119,7 @@ const { fullName: completeName } = user;
 completeName; // => 'Sam Fisher'
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Default values
 
@@ -133,7 +138,7 @@ const array = [1];
 const [one, two = 2] = array;
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Arrays
 
@@ -166,7 +171,7 @@ const [,, three] = array;
 console.log(three);
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ### Retornar y extraer múltiples valores
 
@@ -176,7 +181,7 @@ const sumAndMultiply = (a, b) => [a + b, a * b];
 const [sum, product] = sumAndMultiply(2, 3);
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ### Swapping de variables
 
@@ -191,7 +196,7 @@ console.log(a);
 console.log(b);
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Destructuring + Rest parameters magic ✨
 
@@ -205,7 +210,7 @@ const numbers = [ 10, 20, 30, 40, 50 ];
 const [ head, ...tail ] = numbers;
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ### ...y con objetos
 
@@ -232,7 +237,7 @@ const info = {
 }
 ```
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
 
 ## Compatibilidad con los diferentes browsers
 
@@ -244,4 +249,4 @@ El `rest operator` **no funciona en Edge ni Safari** (aunque Edge tendrá soport
 
 👉 Como siempre, se recomienda visitar [Can I use...](https://caniuse.com/#search=destructuring) para estar al tanto de las novedades en cuanto al soporte de una determinada feature.
 
-[↑ Ir al inicio](#-es6-array--object-destructuring)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-es6-destructuring-notes#contenido)
