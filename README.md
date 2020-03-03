@@ -5,7 +5,7 @@
 
 # ![ES6: Array & Object destructuring](https://i.imgur.com/jmOquTu.png)
 
-## Contenido relacionado
+## Notas relacionadas
 
 ### `ES6+`
 
